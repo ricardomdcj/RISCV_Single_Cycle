@@ -1,0 +1,7 @@
+Time: 0 | Address: 00000000 | Data Written: 12345678 | Data Read: 00000000
+Time: 10 | Address: 00000000 | Data Written: 12345678 | Data Read: 12345678
+Teste bem-sucedido: RD = 12345678
+Time: 50 | Address: 00000001 | Data Written: 87654321 | Data Read: 00000000
+Time: 60 | Address: 00000001 | Data Written: 87654321 | Data Read: 87654321
+Teste bem-sucedido: RD = 87654321
+Simulation complete via $finish(1) at time 100 NS + 0
