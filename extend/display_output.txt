@@ -1,0 +1,9 @@
+Time: 0 | Instruction: 07fa123 | Immediate Extended: 000003fd
+I-type: 000003fd (esperado: 3FD)
+Time: 10 | Instruction: 05ab456 | Immediate Extended: 000002d6
+S-type: 000002d6 (esperado: 2D6)
+Time: 20 | Instruction: 07de789 | Immediate Extended: 00000be8
+B-type: 00000be8 (esperado: BE8)
+Time: 30 | Instruction: 04bcdef | Immediate Extended: 0006f25e
+J-type: 0006f25e (esperado: 6F25E)
+Simulation complete via $finish(1) at time 40 NS + 0

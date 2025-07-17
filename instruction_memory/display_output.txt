@@ -1,0 +1,5 @@
+Time: 0 | Address: 00000000 | Data Read: 00000000
+Time: 20 | Address: 00000004 | Data Read: 00000004
+Time: 40 | Address: 00000008 | Data Read: 00000008
+Time: 60 | Address: 0000000c | Data Read: 0000000c
+Simulation complete via $finish(1) at time 80 NS + 0
