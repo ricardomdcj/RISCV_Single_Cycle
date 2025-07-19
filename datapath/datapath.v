@@ -126,7 +126,7 @@ module datapath (
     );
 
     //DATA_MEMORY
-    .data_memory DATA_MEMORY (
+    data_memory DATA_MEMORY (
         .A(ALUResult),  //!Endereço de leitura/escrita
         .WD(WriteData), //!Dados a serem escritos
         .WE(MemWrite),  //!Sinal de habilitação de escrita (ativo em 1)            
