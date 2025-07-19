@@ -7,14 +7,21 @@ module ALU (
 );
 
     always @ (*) begin
+
         case (ALUControl)
-            3'b000: ALUResult = SrcA + SrcB; //Soma
-            3'b001: ALUResult = SrcA - SrcB; //Subtração
-            3'b010: ALUResult = SrcA & SrcB; //AND
-            3'b011: ALUResult = SrcA | SrcB; //OR
-            3'b101: ALUResult = (SrcA < SrcB) ? 32'b1 : 32'b0; //SLT
-            default: ALUResult = 32'b0; //Operação inválida
+            3'b000: ALUResult = SrcA + SrcB; // Soma
+            3'b001: ALUResult = SrcA - SrcB; // Subtração
+            3'b010: ALUResult = SrcA & SrcB; // AND
+            3'b011: ALUResult = SrcA | SrcB; // OR
+            3'b101: ALUResult = ($signed(SrcA) < $signed(SrcB)) ? 32'd1 : 32'd0; // SLT  
+            default: ALUResult = 32'd0; 
         endcase
+
+        if (ALUResult == 32'd0) begin
+            Zero = 1'b1;
+        end else begin
+            Zero = 1'b0;
+        end
     end
     
 endmodule
