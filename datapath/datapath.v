@@ -25,7 +25,7 @@ module datapath (
     wire [31:0] RD1;            //!Dados lidos do primeiro registrador
     wire [31:0] RD2;            //!Dados lidos do segundo registrador
     wire [31:0] PCPlus4;        //!Sinal de entrada do MUX DO PCNext (Entrada 0)
-    wire [31:0] Instr;          //!Instrção fornecida pelo INSTRUCTION_MEMORY
+    wire [31:0] Instr;          //!Instrução fornecida pelo INSTRUCTION_MEMORY
     wire [31:0] PCTarget;       //!Endereço de "target" da instrução "branch"
     wire [31:0] ImmExt;         //!Saída do EXTEND   
     wire [31:0] SrcA;           //!Entrada A da ALU
