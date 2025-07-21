@@ -3,7 +3,7 @@ module instruction_memory (
     output reg [31:0] RD //!Dados lidos da memória de instruções
 );
 
-    reg [31:0] memory [0:255]; //!Memória de instruções de 32 bits e 256 palavras
+    reg [31:0] memory [0:1 << 16]; //!Memória de instruções de 32 bits e 256 palavras
 
     initial begin
         // Inicializa a memória com algumas instruções de exemplo múltiplas de 4
