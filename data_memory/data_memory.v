@@ -5,7 +5,7 @@ module data_memory (
     output [31:0] RD //!Dados lidos da memória de dados
 );
     integer i;
-    reg [31:0] memory [0:255]; //!Memória de dados de 32 bits e 256 palavras
+    reg [31:0] memory [0:1 << 16]; //!Memória de dados de 32 bits e 256 palavras
 
     initial begin
         // Inicializa a memória com zeros
