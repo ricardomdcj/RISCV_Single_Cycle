@@ -37,7 +37,7 @@ module cpu (
 
     //CONTROL_UNIT
     Control_Unit CONTROL_UNIT (
-        .Op(Op),                //!Sinal de lógica da CONTROL_UNIT
+        .Op(op),                //!Sinal de lógica da CONTROL_UNIT
         .funct3(funct3),        //!Sinal de lógica da CONTROL_UNIT
         .funct7(funct7),        //!Sinal de lógica da CONTROL_UNIT
         .Zero(Zero),            //!Sinal de indicação de resultado da ALU igual a zero
