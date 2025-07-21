@@ -1,3 +1,4 @@
+`define DEBUG
 module tb_cpu;
     
     reg clk;
@@ -22,7 +23,7 @@ module tb_cpu;
     /* LOOPS DO TESTBENCH */
     initial clk = 0; always #5 clk = ~clk;   //!Ciclo do clock
 
-    always begin
+    always @(negedge clk) begin
         if (PC == 32'h100C and PCNext == 32'h1000) loopCounter = loopCounter + 1;   //!Se o programa realizar o loop, adiciona 1 no contador
         if (loopCounter >= 10) $stop;   //!Depois de 10 ciclos de loop, para o testbench
     end
@@ -34,6 +35,12 @@ module tb_cpu;
         $monitor("Valor armazenado no registrador 5: %h", Register_x5);
         $monitor("Valor armazenado no registrador 6: %h", Register_x6);
         $monitor("Valor armazenado no registrador 9: %h", Register_x9);
+    end
+
+    initial begin
+        `ifdef DEBUG
+            #10000 $stop;    //!Força final da execução do testbench para debbuging
+        `endif
     end
 
 endmodule
