@@ -66,9 +66,9 @@ endmodule
 
    VALORES INCIAIS DE INSTRUCTION_MEMORY:
    memory[0] = 32'hFFC4A303
-   memory[1] = 32'h0064A423
-   memory[2] = 32'h0062E233
-   memory[3] = 32'hFE420AE3
+   memory[4] = 32'h0064A423
+   memory[8] = 32'h0062E233
+   memory[12] = 32'hFE420AE3
 
     VALORES INICIAIS DE DATA_MEMORY:
     0x2000 = 10
