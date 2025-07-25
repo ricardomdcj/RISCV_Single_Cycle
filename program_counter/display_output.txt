@@ -1,0 +1,19 @@
+Tempo=0 | CLK=0 | PCNext=00000000 | PC=xxxxxxxx
+Tempo=5 | CLK=1 | PCNext=00000000 | PC=00000000
+Tempo=10 | CLK=0 | PCNext=00000000 | PC=00000000
+Tempo=12 | CLK=0 | PCNext=00000064 | PC=00000000
+Tempo=15 | CLK=1 | PCNext=00000064 | PC=00000064
+Tempo=20 | CLK=0 | PCNext=00000064 | PC=00000064
+Tempo=22 | CLK=0 | PCNext=0001e240 | PC=00000064
+Tempo=25 | CLK=1 | PCNext=0001e240 | PC=0001e240
+Tempo=30 | CLK=0 | PCNext=0001e240 | PC=0001e240
+Tempo=32 | CLK=0 | PCNext=ffffffff | PC=0001e240
+Tempo=35 | CLK=1 | PCNext=ffffffff | PC=ffffffff
+Tempo=40 | CLK=0 | PCNext=ffffffff | PC=ffffffff
+Tempo=42 | CLK=0 | PCNext=0000000c | PC=ffffffff
+Tempo=45 | CLK=1 | PCNext=0000000c | PC=0000000c
+Tempo=50 | CLK=0 | PCNext=0000000c | PC=0000000c
+Tempo=55 | CLK=1 | PCNext=0000000c | PC=0000000c
+Tempo=60 | CLK=0 | PCNext=0000000c | PC=0000000c
+Testbench finalizado!
+Simulation complete via $finish(1) at time 62 NS + 0
