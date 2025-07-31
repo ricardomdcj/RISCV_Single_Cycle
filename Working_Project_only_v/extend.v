@@ -1,5 +1,5 @@
 module extend (
-    input [31:7] instr,      //! Instrução a ser processada
+    input [31:7] instr,      //! Imediato da instrução a ser processada
     input [1:0]  immsrc,     //! Comando contendo o tipo de extensão a ser realizado
     output reg [31:0] immext //! Saída contendo a extensão da instrução
 );
