@@ -1,0 +1,22 @@
+-----------------------------------------------
+--- INICIANDO VERIFICACAO DO TESTBENCH ---
+--- Teste de Load/Store (programa ativ5) ---
+-----------------------------------------------
+
+[1] Verificando Registradores (Estado Final):
+PASS: t0 (x5) = 0x00000000
+PASS: t1 (x6) = 0x00000010
+PASS: t2 (x7) = 0x0000007f
+PASS: t3 (x28) = 0xfffffffe
+PASS: t4 (x29) = 0x00005678
+PASS: t5 (x30) = 0x00005678
+PASS: t6 (x31) = 0x9abcdef0
+
+[2] Verificando Memoria (store_area @ 0x10):
+PASS: Mem[19:16] = 0x56781212
+PASS: Mem[23:20] = 0x00005678
+PASS: Mem[27:24] = 0x9abcdef0
+FAIL: Mem[31:28] = 0x00120012 (Esperado: 0xFFFE007F) <-- Data Hazard esperado
+
+--- VERIFICACAO CONCLUIDA ---
+Simulation stopped via $stop(1) at time 215 NS + 0
